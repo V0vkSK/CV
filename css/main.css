@@ -5,11 +5,17 @@
   --left-side-background:rgb(6, 89, 21);
   --right-side-background: #fff;
   --name-container-background: rgb(22, 125, 73);
+  --h2-color:rgb(20, 83, 38);
+}
+
+html {
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Times New Roman", Times, serif;
-  box-sizing: border-box;
+  box-sizing: inherit;
   background-color: lightgray;
 }
 
@@ -38,7 +44,6 @@ li {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  height: 100vh;
   background-color: var(--left-side-background);
   color: var(--primary-text-color);
 }
@@ -47,11 +52,13 @@ li {
   display: flex;
   flex-direction: column;
   width: 700px;
-  height: 100vh;
   background-color: var(--right-side-background);
 }
 
 .name-container {
+  position: absolute;
+  transform: translate(0, 0);
+  transition: all 2s ease-in-out;
   width: 700px;
   height: 150px;
   margin-top: 50px;
@@ -98,6 +105,17 @@ li {
   background-color: var(--primary-text-color);
   width: 300px;
   height: 1px;
+}
+.contact .link-to {
+  color: var(--primary-text-color);
+  align-self: flex-start;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .link-to:hover, .contact .link-to:focus {
+  color: rgb(49, 219, 30);
 }
 
 .contact-info, .languages-info, .about-me {
@@ -147,7 +165,7 @@ li {
   display: flex;
   flex-direction: column;
   color: var(--second-name-text-color);
-  padding: 30px 70px;
+  padding: 30px 70px 0;
   align-items: center;
 }
 .technologies__title, .projects__title {
@@ -155,6 +173,22 @@ li {
   align-self: flex-start;
   margin-bottom: 10px;
 }
+.technologies__link, .projects__link {
+  color: var(--h2-color);
+  align-self: flex-start;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.technologies__link:hover, .technologies__link:focus, .projects__link:hover, .projects__link:focus {
+  color: rgb(49, 219, 30);
+}
+
+.up {
+  margin-top: 180px;
+}
+
 .technologies-item {
   display: flex;
   flex-direction: column;
@@ -163,7 +197,7 @@ li {
 }
 .technologies-item__title {
   display: flex;
-  color: rgb(20, 83, 38);
+  color: var(--h2-color);
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 10px;

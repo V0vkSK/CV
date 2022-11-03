@@ -9,6 +9,7 @@
   </head>
   <body>
     <main class="container">
+      <!-- Container left -->
       <div class="container-left">
         <img
           class="photo"
@@ -30,9 +31,21 @@
           <div class="contact__line"></div>
           <ul class="contact__adresses">
             <li>Bulgaria</li>
-            <li>Phone: +359 87-685-38-72</li>
-            <li>e-mail: vs.k@gmail.com</li>
-            <li>GitHub: git-hub.com/V0vkSK</li>
+            <li>
+              <a href="tel:+359 87-685-38-72" class="link-to"
+                >Phone: +359 87-685-38-72</a
+              >
+            </li>
+            <li>
+              <a class="link-to" href="mailto: vs.k@gmail.com"
+                >e-mail: vs.k@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="git-hub.com/V0vkSK" class="link-to"
+                >GitHub: git-hub.com/V0vkSK</a
+              >
+            </li>
           </ul>
           <div class="languages-info">
             <svg class="languages-info__icon">
@@ -54,7 +67,7 @@
               <img
                 class="lang-icon"
                 src="./assets/Flag Russia.svg"
-                alt="Flag of Ukraine"
+                alt="Flag of rus"
                 width="60"
               />
               <p class="lang-exp">Native</p>
@@ -63,7 +76,16 @@
               <img
                 class="lang-icon-uk"
                 src="./assets/Flag of the United Kingdom.svg"
-                alt="Flag of Ukraine"
+                alt="Flag of UK"
+                width="60"
+              />
+              <p class="lang-exp">Basic</p>
+            </li>
+            <li class="lang__item">
+              <img
+                class="lang-icon-uk"
+                src="./assets/bulgaria.svg"
+                alt="Flag of Bulgaria"
                 width="60"
               />
               <p class="lang-exp">Basic</p>
@@ -83,12 +105,14 @@
           </p>
         </section>
       </div>
+      <!--  Container right -->
       <div class="container-right">
         <div class="name-container">
           <h1 class="name">Volodymyr Kyrylenko</h1>
           <p class="profession">Front-end Developer</p>
         </div>
-        <section class="technologies">
+
+        <section class="technologies up">
           <h2 class="technologies__title">Technologies</h2>
           <ul class="technologies__list">
             <li class="technologies-item">
@@ -120,12 +144,17 @@
                 <img
                   class="technologies-item-icons__icon"
                   src="./assets/Vue.png"
-                  alt="BEM"
+                  alt="vue-icon"
                 />
                 <img
                   class="technologies-item-icons__icon"
                   src="./assets/vuex.png"
-                  alt="SASS"
+                  alt="vuex-icon"
+                />
+                <img
+                  class="technologies-item-icons__icon"
+                  src="./assets/react.svg"
+                  alt="react-icon"
                 />
               </div>
             </li>
@@ -136,17 +165,17 @@
                 <img
                   class="technologies-item-icons__icon"
                   src="./assets/Git.png"
-                  alt="BEM"
+                  alt="Git-icon"
                 />
                 <img
                   class="technologies-item-icons__icon"
                   src="./assets/npm.svg"
-                  alt="SASS"
+                  alt="npm-icon"
                 />
                 <img
                   class="technologies-item-icons__icon"
                   src="./assets/webpack.svg"
-                  alt="SASS"
+                  alt="webpack-icon"
                 />
               </div>
             </li>
@@ -154,7 +183,9 @@
         </section>
         <section class="projects">
           <h2 class="projects__title">Projects</h2>
-          <h3 class="projects__link">https://</h3>
+          <a href="https://vovkcv.netlify.app" class="projects__link"
+            >This CV https://vovkcv.netlify.app</a
+          >
         </section>
       </div>
     </main>
