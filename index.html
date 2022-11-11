@@ -17,11 +17,17 @@
           width="100%"
           alt="Volodymyr Kyrylenko"
         />
-
         <section class="contact">
           <div class="contact-info">
-            <svg class="contact-info__icon">
-              <use href="./css/sprite.svg#icon-home3"></use>
+            <svg
+              class="contact-info__icon"
+              style="width: 40px; height: 40px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
+              />
             </svg>
             <h2 class="contact-info__title">
               Contact <br />
@@ -48,8 +54,15 @@
             </li>
           </ul>
           <div class="languages-info">
-            <svg class="languages-info__icon">
-              <use href="./css/sprite.svg#icon-sphere"></use>
+            <svg
+              class="languages-info__icon"
+              style="width: 40px; height: 40px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+              />
             </svg>
             <h2 class="languages-info__title">Languages</h2>
           </div>
@@ -57,7 +70,7 @@
             <li class="lang__item">
               <img
                 class="lang-icon"
-                src="./assets/Ukraine Flag.svg"
+                src="./assets/UkraineFlag.svg"
                 alt="Flag of Ukraine"
                 width="60"
               />
@@ -66,7 +79,7 @@
             <li class="lang__item">
               <img
                 class="lang-icon"
-                src="./assets/Flag Russia.svg"
+                src="./assets/Flag_ru.svg"
                 alt="Flag of rus"
                 width="60"
               />
@@ -75,7 +88,7 @@
             <li class="lang__item">
               <img
                 class="lang-icon-uk"
-                src="./assets/Flag of the United Kingdom.svg"
+                src="./assets/Flag_UK.svg"
                 alt="Flag of UK"
                 width="60"
               />
@@ -92,16 +105,23 @@
             </li>
           </ul>
           <div class="about-me">
-            <svg class="about-me__icon">
-              <use href="./css/sprite.svg#icon-info"></use>
+            <svg
+              class="about-me__icon"
+              style="width: 40px; height: 40px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M14,7V9H13V15H14V17H10V15H11V9H10V7H14M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"
+              />
             </svg>
             <h2 class="about-me__title">About me</h2>
           </div>
           <div class="contact__line"></div>
           <p class="text">
             I am looking for a position of a Junior Front-end developer. I have
-            done a few study projects using Vue.js and React.js including
-            landing website, adaptive, animation etc.
+            done a few study projects using Vue.js and React.js. Landing
+            websites, adaptive etc.
           </p>
         </section>
       </div>
@@ -136,10 +156,8 @@
               <p class="technologies-item__description">REST API, Axios, DOM</p>
             </li>
             <li class="technologies-item">
-              <h3 class="technologies-item__title">Vue.js, REACT</h3>
-              <p class="technologies-item__description">
-                Vuex, vue-router, Hooks
-              </p>
+              <h3 class="technologies-item__title">Vue.js, React.js</h3>
+              <p class="technologies-item__description">Vuex, vue-router</p>
               <div class="technologies-item-icons">
                 <img
                   class="technologies-item-icons__icon"
@@ -182,9 +200,25 @@
           </ul>
         </section>
         <section class="projects">
-          <h2 class="projects__title">Projects</h2>
-          <a href="https://vovkcv.netlify.app" class="projects__link"
-            >This CV https://vovkcv.netlify.app</a
+          <h2 class="projects__title">My projects:</h2>
+          <a
+            href="https://github.com/V0vkSK/movies-reviews"
+            class="projects__link"
+            target="_blank"
+            >App "Movies-perviews" by using "Movie Reviews API" from NY Times on
+            GitHub</a
+          >
+          <a
+            href="https://vovkcv.netlify.app"
+            class="projects__link"
+            target="_blank"
+            >This CV on Netlify: https://vovkcv.netlify.app</a
+          >
+          <a
+            href="https://github.com/V0vkSK/CV"
+            class="projects__link"
+            target="_blank"
+            >This CV on GitHub</a
           >
         </section>
       </div>
