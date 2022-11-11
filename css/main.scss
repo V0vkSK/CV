@@ -101,18 +101,30 @@ li{
     width: 300px;
     height: 1px;
   }
+} 
   .link-to {
+      display: inline-flex;
       color: var(--primary-text-color);
       align-self: flex-start;
       text-decoration: none;
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 10px;
+      &::before{
+        content: '';
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background-image: url('../assets/phone-classic.svg');
+    }
       &:hover, &:focus{
         color: rgb(49, 219, 30);
       }
+     
 		}
-}
+
+
+
 .contact-info, .languages-info, .about-me{
   display: flex;
   align-items: center;

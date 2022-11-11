@@ -2,10 +2,10 @@
   --primary-text-color: #fff;
   --second-name-text-color: rgb(6, 61, 62);
   --color-like-black: rgb(6, 26, 6);
-  --left-side-background:rgb(6, 89, 21);
+  --left-side-background: rgb(6, 89, 21);
   --right-side-background: #fff;
   --name-container-background: rgb(22, 125, 73);
-  --h2-color:rgb(20, 83, 38);
+  --h2-color: rgb(20, 83, 38);
 }
 
 html {
@@ -106,24 +106,56 @@ li {
   width: 300px;
   height: 1px;
 }
-.contact .link-to {
+
+.link-to {
+  display: inline-flex;
   color: var(--primary-text-color);
   align-self: flex-start;
+  align-items: center;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.contact .link-to:hover, .contact .link-to:focus {
+.link-to:hover,
+.link-to:focus {
   color: rgb(49, 219, 30);
 }
+.phone::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../assets/phone-classic.svg");
+}
+.mail::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../assets/email-outline.svg");
+}
+.git::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../assets/github.svg");
+}
 
-.contact-info, .languages-info, .about-me {
+.contact-info,
+.languages-info,
+.about-me {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.contact-info__icon, .languages-info__icon, .about-me__icon {
+.contact-info__icon,
+.languages-info__icon,
+.about-me__icon {
   display: flex;
   width: 40px;
   height: 40px;
@@ -131,7 +163,9 @@ li {
   margin-right: 30px;
   fill: var(--primary-text-color);
 }
-.contact-info__title, .languages-info__title, .about-me__title {
+.contact-info__title,
+.languages-info__title,
+.about-me__title {
   font-size: 30px;
 }
 
@@ -161,19 +195,22 @@ li {
   line-height: 1.4;
 }
 
-.technologies, .projects {
+.technologies,
+.projects {
   display: flex;
   flex-direction: column;
   color: var(--second-name-text-color);
   padding: 30px 70px 0;
   align-items: center;
 }
-.technologies__title, .projects__title {
+.technologies__title,
+.projects__title {
   color: rgb(7, 153, 95);
   align-self: flex-start;
   margin-bottom: 10px;
 }
-.technologies__link, .projects__link {
+.technologies__link,
+.projects__link {
   color: var(--h2-color);
   align-self: flex-start;
   text-decoration: none;
@@ -181,7 +218,10 @@ li {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.technologies__link:hover, .technologies__link:focus, .projects__link:hover, .projects__link:focus {
+.technologies__link:hover,
+.technologies__link:focus,
+.projects__link:hover,
+.projects__link:focus {
   color: rgb(49, 219, 30);
 }
 
@@ -214,4 +254,4 @@ li {
 .technologies-item-icons__icon {
   width: 70px;
   margin-right: 30px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
