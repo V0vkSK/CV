@@ -11,12 +11,7 @@
     <main class="container">
       <!-- Container left -->
       <div class="container-left">
-        <img
-          class="photo"
-          src="./assets/Photo.jpg"
-          width="100%"
-          alt="Volodymyr Kyrylenko"
-        />
+        <img class="photo" src="./assets/Photo.jpg" alt="Volodymyr Kyrylenko" />
         <section class="contact">
           <div class="contact-info">
             <svg
@@ -37,13 +32,13 @@
           <div class="contact__line"></div>
           <ul class="contact__adresses">
             <li>Bulgaria</li>
-            <li>
-              <a href="tel:+359 87-685-38-72" class="link-to phone"
+            <li class="phone">
+              <a href="tel:+359876853872" class="link-to"
                 >Phone: +359 87-685-38-72</a
               >
             </li>
             <li>
-              <a class="link-to mail" href="mailto: vs.k@gmail.com"
+              <a class="link-to mail" href="mailto:vs.k@gmail.com"
                 >e-mail: vs.k@gmail.com</a
               >
             </li>
@@ -56,7 +51,7 @@
           <div class="languages-info">
             <svg
               class="languages-info__icon"
-              style="width: 40px; height: 40px"
+              style="width: 36px; height: 36px"
               viewBox="0 0 24 24"
             >
               <path
@@ -81,38 +76,40 @@
                 class="lang-icon"
                 src="./assets/Flag_ru.svg"
                 alt="Flag of rus"
-                width="60"
               />
               <p class="lang-exp">Native</p>
             </li>
             <li class="lang__item">
               <img
-                class="lang-icon-uk"
+                class="lang-icon"
                 src="./assets/Flag_UK.svg"
                 alt="Flag of UK"
-                width="60"
               />
               <p class="lang-exp">Basic +</p>
             </li>
             <li class="lang__item">
               <img
-                class="lang-icon-uk"
+                class="lang-icon"
                 src="./assets/bulgaria.svg"
                 alt="Flag of Bulgaria"
-                width="60"
               />
               <p class="lang-exp">Beginner</p>
             </li>
           </ul>
           <div class="about-me">
             <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="currentColor"
               class="about-me__icon"
-              style="width: 40px; height: 40px"
-              viewBox="0 0 24 24"
+              viewBox="0 0 16 16"
             >
               <path
-                fill="currentColor"
-                d="M14,7V9H13V15H14V17H10V15H11V9H10V7H14M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
               />
             </svg>
             <h2 class="about-me__title">About me</h2>
@@ -121,8 +118,8 @@
           <p class="text">
             I am looking for a position of a Junior Front-end developer. I have
             done a few study projects using Vue.js and React.js. Landing
-            websites, adaptive etc. Fast learner, diligent, deal with the
-            problem to solve it
+            websites, animations, adaptive etc. Fast learner, diligent, deal
+            with the problem to solve it
           </p>
         </section>
       </div>
@@ -142,23 +139,31 @@
               <div class="technologies-item-icons">
                 <img
                   class="technologies-item-icons__icon"
-                  src="./assets/BEM.jpg"
-                  alt="BEM"
-                />
-                <img
-                  class="technologies-item-icons__icon"
                   src="./assets/Sass.jpg"
                   alt="SASS"
                 />
+                <img
+                  class="technologies-item-icons__icon"
+                  src="./assets/BEM.jpg"
+                  alt="BEM"
+                />
               </div>
             </li>
+            <div class="technologies-item__line"></div>
             <li class="technologies-item">
               <h3 class="technologies-item__title">JavaScript</h3>
-              <p class="technologies-item__description">REST API, Axios, DOM</p>
+              <p class="technologies-item__description">
+                REST API, Axios, DOM, SPA
+              </p>
             </li>
+            <div class="technologies-item__line"></div>
             <li class="technologies-item">
-              <h3 class="technologies-item__title">Vue.js, React.js</h3>
-              <p class="technologies-item__description">Vuex, vue-router</p>
+              <h3 class="technologies-item__title">
+                Vue.js, Nuxt.js, React.js, Bootstrap-Vue
+              </h3>
+              <p class="technologies-item__description">
+                Vuex, Vue-Router, Vuelidate etc.
+              </p>
               <div class="technologies-item-icons">
                 <img
                   class="technologies-item-icons__icon"
@@ -172,11 +177,27 @@
                 />
                 <img
                   class="technologies-item-icons__icon"
+                  src="./assets/nuxt.png"
+                  alt="nuxt-icon"
+                />
+                <img
+                  class="technologies-item-icons__icon"
+                  src="./assets/vuelidate.png"
+                  alt="vuelidate-icon"
+                />
+                <img
+                  class="technologies-item-icons__icon"
                   src="./assets/react.svg"
                   alt="react-icon"
                 />
+                <img
+                  class="technologies-item-icons__icon"
+                  src="./assets/bootstrap.png"
+                  alt="bootstrap-icon"
+                />
               </div>
             </li>
+            <div class="technologies-item__line"></div>
             <li class="technologies-item">
               <h3 class="technologies-item__title">OTHER</h3>
               <p class="technologies-item__description">GIT, NPM, WebPack</p>
@@ -206,8 +227,7 @@
             href="https://movies-reviews.onrender.com"
             class="projects__link"
             target="_blank"
-            >App "Movies-reviews" by using "Movie Reviews API" from NY Times on
-            Render</a
+            >"Movies-reviews" by using "Movie Reviews API" on Render</a
           >
           <a
             href="https://github.com/V0vkSK/movies-reviews"
