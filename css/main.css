@@ -185,6 +185,8 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  transition: all 2s ease 0s;
+  transition-timing-function: ease-out;
 }
 .contact-info__icon,
 .languages-info__icon,
@@ -196,6 +198,13 @@ li {
   margin-right: 30px;
   fill: var(--primary-text-color);
 }
+.contact-info:hover,
+.languages-info:hover,
+.about-me:hover {
+  content: "";
+  transform: translate(10px, 10px);
+}
+
 .contact-info__title,
 .languages-info__title,
 .about-me__title {
@@ -220,6 +229,11 @@ li {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
+  transform: scale(1);
+}
+.lang-icon:hover {
+  transform: scale(1.5);
 }
 
 .text {
@@ -296,4 +310,27 @@ li {
 .technologies-item-icons__icon {
   width: 44px;
   margin-right: 30px;
-} /*# sourceMappingURL=main.css.map */
+  transition: all 1s cubic-bezier(0, -0.3, 0.1, 1) 0s;
+
+  transform: rotate(0deg);
+}
+.technologies-item-icons__icon:hover {
+  transform: rotate(360deg);
+}
+.technologies-item-icons__icon-react {
+  position: relative;
+  width: 44px;
+  animation-name: react;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes react {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1360deg);
+  }
+}
