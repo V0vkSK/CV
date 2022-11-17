@@ -2,9 +2,9 @@
   --primary-text-color: #fff;
   --second-name-text-color: rgb(6, 61, 62);
   --color-like-black: rgb(6, 26, 6);
-  --left-side-background: rgb(6, 89, 21);
+  --left-side-background: rgb(143, 172, 213);
   --right-side-background: #fff;
-  --name-container-background: rgb(22, 125, 73);
+  --name-container-background: rgb(89, 220, 235);
   --h2-color: rgb(20, 83, 38);
 }
 
@@ -12,6 +12,7 @@
 
 html,
 body {
+  min-width: 1150px;
   height: 100%;
   box-sizing: border-box;
   font-family: "Roboto";
@@ -36,7 +37,8 @@ li {
 .container {
   display: flex;
   flex-direction: row;
-  width: 1100px;
+  width: 1150px;
+  padding: 0 15px;
   min-height: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -205,6 +207,7 @@ li {
 .about-me:hover {
   content: "";
   transform: translate(10px, 10px);
+  color: blue;
 }
 
 .contact-info__title,
@@ -239,7 +242,7 @@ li {
 }
 
 .text {
-  padding: 20px;
+  padding: 5px;
   font-size: 18px;
   line-height: 1.4;
 }
@@ -335,4 +338,10 @@ li {
   100% {
     transform: rotate(1360deg);
   }
+}
+.empty-row {
+  margin-bottom: 20px;
+}
+.tech {
+  color: rgb(228, 70, 81);
 }
