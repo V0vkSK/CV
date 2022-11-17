@@ -241,7 +241,46 @@ li {
 .lang-icon:hover {
   transform: scale(1.5);
 }
-
+/* .bubble {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  background: transparent;
+  border-radius: 3px;
+}
+.bub-title {
+  position: absolute;
+  top: -200px;
+  background-color: blue;
+  color: #fff;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  opacity: 0;
+  transform: scale(0.1);
+  transform-origin: bottom;
+}
+.bub-title::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  margin-left: -8px;
+  top: 100%;
+  background: blue;
+  transform: translate3d(0, -60%, 0) rotate3d(0, 0, 1, 45deg);
+}
+.bubble:hover .bub-title {
+  opacity: 1;
+  transform: scale(1);
+} */
 .text {
   padding: 5px;
   font-size: 18px;
