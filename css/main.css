@@ -37,6 +37,7 @@ li {
 .container {
   background-color: #fff;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   width: 1150px;
   padding: 0 15px;
