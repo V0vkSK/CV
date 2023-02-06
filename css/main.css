@@ -99,6 +99,7 @@ li {
   flex-direction: column;
   align-items: center;
   width: 90%;
+  height: 1065px;
 }
 .contact__adresses {
   list-style: none;
@@ -309,7 +310,7 @@ li {
   line-height: 1.4;
 }
 .text-span {
-  color: red;
+  color: blue;
   padding: 5px;
   font-size: 18px;
   line-height: 1.4;
