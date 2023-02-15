@@ -354,7 +354,7 @@ li {
 .technologies-item {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   margin-bottom: 20px;
 }
 .technologies-item__line {
